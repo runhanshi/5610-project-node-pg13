@@ -18,10 +18,7 @@ mongoose.connect("mongodb+srv://runhanshi:970329@cluster0.jexfynk.mongodb.net/?r
 
 
 const app = express();
-app.use(cors({
-    credentials: true,
-    origin: 'http://localhost:3000'
-}))
+app.use(cors())
 app.use(session({
     secret: 'should be an environment variable',
     resave: false,
