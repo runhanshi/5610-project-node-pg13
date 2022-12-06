@@ -1,4 +1,4 @@
-import usersModel from "./users-model.js";
+import usersModel from "./user-model.js";
 
 export const createUser = async (user) =>
     await usersModel.create(user)
